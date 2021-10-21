@@ -2,11 +2,11 @@
 
 # Portfolio
 
-> This is a project to learn the basics about branching, using linterns, GitHub workflow and professional documentation.
+> This project is used to set up a personal portfolio.
 
 ![screenshot](./images/screenshot.png)
 
-Additional description about the project and its features.
+This portfolio is made based on Figma template number 5.
 
 ## Built With
 
@@ -20,10 +20,12 @@ To get a local copy up and running follow these simple example steps.
 
 
 ### Setup
-You can go to "Code > Clone" and copy the link
+You can go to `Code > Clone` and copy the link
 
 ### Install
-Go to the git bash on your local machine and clone it to your local repository using the command $ git clone "repo link"
+Go to the git bash on your local machine and clone it to your local repository using the command 
+
+    $ git clone "repo link"
 
 ### Usage
 Open [index file](index.html) to see the webpage
@@ -45,12 +47,4 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
