@@ -1,34 +1,123 @@
-/* font-family: Crete Round;
-font-size: 56px;
-font-style: normal;
-font-weight: 400;
-line-height: 64px;
-letter-spacing: 0.3700000047683716px;
-text-align: left;
- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 body {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
 }
 
 .block {
   display: flex;
-  flex-flow: row no-wrap;
-  color:white;
-  border: 5px solid goldenrod;
-  flex:  1 1 ;
-}
-header {
-  justify-content: space-between;
-}
-.menu {
-  min-width: 50px;
-  height: 100%;
-  padding-block-start: 20px;
-  padding-inline-end: 20px;
+  color: white;
+
+  /* border: 5px solid goldenrod; */
+  flex: 1 1;
 }
 
-main {
-  display: flexbox;
-  flex-flow: column wrap;
+header {
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: #3c3a39;
+  align-items: center;
+  height: 48px;
+}
+
+.name {
+  height: 24px;
+  left: 12px;
+  padding-inline-start: 24px;
+  top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.menu {
+  height: 40px;
+  left: 311px;
+  top: 4px;
+  margin-inline-end: 24px;
+}
+
+.container {
+  background-image: url(images/Background.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 400px;
+  min-height: 590px;
+  flex-flow: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  left: 0;
+  top: 92px;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.title01 {
+  left: 24px;
+  top: 120px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* margin: 12px 0px; */
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff5e1;
+}
+
+.social_media {
+  height: 40px;
+  left: 24px;
+  top: 430px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+.section01 {
+  border: 5px red;
+}
+
+.items {
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
