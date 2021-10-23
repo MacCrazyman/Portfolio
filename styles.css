@@ -39,6 +39,10 @@ button:active {
   width: 124px;
 }
 
+.btn03 {
+  width: 161px;
+}
+
 body {
   background-color: #1c1a19;
 }
@@ -198,24 +202,28 @@ ul {
   line-height: 44px;
   letter-spacing: 0em;
   text-align: left;
-  color: #091e42;
+  color: white;
+  margin-top: 80px;
 }
-
-.card {
-  display: flex;
-  max-width: 327px;
-  flex-flow: column nowrap;
-  justify-content: center;
+article {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
   url(images/Card_background.png);
   background-repeat: no-repeat;
-
+}
+.card {
+  display: flex;
+  max-width: 327px;
+  padding-inline: 16px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  
 }
 .card01 {
   display: flex;
   max-width: 448px;
   flex-flow: column nowrap;
   justify-content: center;
+  background: none;
 }
 
 .text03 {
@@ -238,7 +246,7 @@ ul {
 .lang_item {
   border: 1px solid #8993A4;
   box-sizing: border-box;
-  color: #091E42;
+  color: white;
   height: 40px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -250,3 +258,41 @@ ul {
   margin-inline-end: 12px;
 }
 
+.font_black {
+  color: #091e42;
+  margin-top: 0px;
+}
+
+.ul1 {
+  list-style: inside url(images/Rectangle_55.svg);
+  margin: 12px 12px;
+}
+
+.ul2 {
+  list-style: inside url(images/Rectangle_56.svg);
+  margin: 12px 12px;
+}
+
+.ul3 {
+  list-style: inside url(images/Rectangle_57.svg);
+  margin: 12px 12px;
+}
+
+.ul_about {
+  list-style: none;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 12px 12px;
+}
+
+.ul_content {
+  list-style: none;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 43px;
+}
