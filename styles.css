@@ -8,6 +8,11 @@ font-family: 'Roboto', sans-serif; */
   margin: 0;
 }
 
+.items {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
 button {
   height: 48px;
   width: 100%;
@@ -41,6 +46,7 @@ button:active {
 
 .btn03 {
   width: 161px;
+  margin-bottom: 209px;
 }
 
 body {
@@ -169,10 +175,7 @@ section {
   row-gap: 24px;
 }
 
-.items {
-  margin-top: 12px;
-  margin-bottom: 0px;
-}
+
 
 .cover {
   margin-top: 80px;
@@ -265,17 +268,14 @@ article {
 
 .ul1 {
   list-style: inside url(images/Rectangle_55.svg);
-  margin: 12px 12px;
 }
 
 .ul2 {
   list-style: inside url(images/Rectangle_56.svg);
-  margin: 12px 12px;
 }
 
 .ul3 {
   list-style: inside url(images/Rectangle_57.svg);
-  margin: 12px 12px;
 }
 
 .ul_about {
@@ -284,10 +284,12 @@ article {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 70px;
   letter-spacing: 0em;
   text-align: center;
-  margin: 12px 12px;
+  padding-top: 128px;
+  border-top: 1px solid white;
+  padding-inline-start: 0;
 }
 
 .ul_content {
@@ -295,4 +297,18 @@ article {
   font-size: 22px;
   font-weight: 400;
   line-height: 43px;
+}
+
+.li_about {
+  padding: 12px;
+}
+
+span {
+  padding-left: 12px;
+}
+
+.about {
+  background-image: url(images/Frame_about.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 1400px right;
 }
