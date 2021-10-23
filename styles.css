@@ -17,27 +17,27 @@ button {
   height: 48px;
   width: 100%;
   border: none;
-  font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-family: 'Inter', sans-serif;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 17px;
   line-height: 24px;
-  background: #FF6B00;
+  background: #ff6b00;
   padding: 12px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #FFF5E1;
-  border: 1px solid #F55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
   box-sizing: border-box;
-  color: #F55800;
+  color: #f55800;
 }
+
 button:active {
-  background: #E05304;
-  color: #F4F1F0;
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 .btn01 {
@@ -121,10 +121,9 @@ section {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
-
 
 .title01 {
   left: 24px;
@@ -166,6 +165,7 @@ section {
   background-repeat: no-repeat;
   background-position: bottom right;
   background-position-y: calc(100% + 45px);
+
   /* background-position-y: 115%; */
 }
 
@@ -174,8 +174,6 @@ section {
   display: grid;
   row-gap: 24px;
 }
-
-
 
 .cover {
   margin-top: 80px;
@@ -186,10 +184,10 @@ ul {
   list-style-type: none;
 }
 
-.presentation{
+.presentation {
   font-size: 40px;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #1c1a19;
   margin-bottom: 24px;
@@ -203,24 +201,27 @@ ul {
   width: 100%;
   font-size: 32px;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: white;
   margin-top: 80px;
 }
+
 article {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
-  url(images/Card_background.png);
+  background:
+    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+    url(images/Card_background.png);
   background-repeat: no-repeat;
 }
+
 .card {
   display: flex;
   max-width: 327px;
   padding-inline: 16px;
   flex-flow: column nowrap;
   justify-content: center;
-  
 }
+
 .card01 {
   display: flex;
   max-width: 448px;
@@ -235,19 +236,19 @@ article {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .languages {
   display: flex;
   flex-flow: row;
-  justify-content: flex start;
+  justify-content: left;
   width: 100%;
-  padding: 0px;
+  padding: 0;
 }
 
 .lang_item {
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   box-sizing: border-box;
   color: white;
   height: 40px;
@@ -263,7 +264,7 @@ article {
 
 .font_black {
   color: #091e42;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .ul1 {
@@ -280,12 +281,12 @@ article {
 
 .ul_about {
   list-style: none;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 70px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   padding-top: 128px;
   border-top: 1px solid white;
