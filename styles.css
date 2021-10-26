@@ -313,3 +313,31 @@ span {
   background-repeat: no-repeat;
   background-position: bottom 1400px right;
 }
+
+.contact_ul {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 100%;
+  padding-inline-start: 0;
+}
+
+ul.contact_ul > li {
+  display: flex;
+  margin-bottom: 24px;
+  width: 100%;
+  justify-items: center;
+}
+
+ul.contact_ul > li > input, textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+footer {
+  background: white;
+}
+
+#form_button {
+  width: auto;
+}
