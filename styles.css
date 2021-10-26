@@ -314,28 +314,74 @@ span {
   background-position: bottom 1400px right;
 }
 
+footer {
+  background: white;
+}
+
+footer h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 58px;
+}
+
 .contact_ul {
-  display: flex;
+  display: inline flex;
   flex-flow: column nowrap;
   align-items: center;
   max-width: 100%;
   padding-inline-start: 0;
+  margin-bottom: 100px;
 }
 
 ul.contact_ul > li {
   display: flex;
   margin-bottom: 24px;
   width: 100%;
-  justify-items: center;
+  justify-content: center;
 }
 
-ul.contact_ul > li > input, textarea {
+ul.contact_ul > li > input {
   width: 100%;
-  resize: vertical;
+  min-width: 48px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
 }
 
-footer {
-  background: white;
+textarea {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  resize: vertical;
+  background: #fbf8f7;
+  min-height: 114px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+input::placeholder {
+  padding: 15px;
+}
+
+textarea::placeholder {
+  color: #3c3a39;
 }
 
 #form_button {
