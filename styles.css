@@ -240,7 +240,7 @@ article {
 }
 
 .languages {
-  display: flex;
+  /*display: flex;*/
   flex-flow: row;
   justify-content: left;
   width: 100%;
@@ -248,6 +248,7 @@ article {
 }
 
 .lang_item {
+  float: left;
   border: 1px solid #8993a4;
   box-sizing: border-box;
   color: white;
