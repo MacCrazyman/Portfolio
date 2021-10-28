@@ -46,7 +46,7 @@ button:active {
 
 .btn03 {
   width: 161px;
-  margin-bottom: 209px;
+  /* margin-bottom: 209px; */
 }
 
 body {
@@ -187,8 +187,9 @@ section {
 }
 
 .cover {
-  margin-top: 80px;
   max-width: 684px;
+  flex: 1 1;
+  margin-bottom: 24px;
 }
 
 ul {
@@ -197,10 +198,12 @@ ul {
 
 .presentation {
   font-size: 40px;
+  padding: 16px 0;
   line-height: 52px;
   letter-spacing: 0;
   text-align: left;
   color: #1c1a19;
+  margin-inline-end: 24px;
   /* margin-bottom: 24px; */
 }
 
@@ -208,13 +211,16 @@ ul {
   border-top: 1px solid #212121;
   flex-basis: 300px;
   flex-grow: 1;
-  margin: 0 24px;
+  /* margin: 0 24px; */
 }
 
 #work_cover {
+  margin-top: 80px;
   display: flex;
   flex-flow: row wrap ;
+  align-items: flex-start;
 }
+
 
 .subtitle {
   width: 100%;
@@ -231,11 +237,12 @@ article {
     linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
     url(images/Card_background.png);
   background-repeat: no-repeat;
+  max-width: 369px;
 }
 
 .card {
   display: flex;
-  max-width: 327px;
+  max-width: 369px;
   padding-inline: 16px;
   flex-flow: column nowrap;
   justify-content: center;
@@ -247,6 +254,7 @@ article {
   flex-flow: column nowrap;
   justify-content: center;
   background: none;
+  /* margin: 0; */
 }
 
 .text03 {
@@ -256,6 +264,16 @@ article {
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
+}
+
+#work_cards article {
+  margin: 0 0 24px 0;
+}
+
+#work_cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .languages {
@@ -298,6 +316,11 @@ article {
   list-style: inside url(images/Rectangle_57.svg);
 }
 
+#about_header {
+  max-width: 566px;
+  padding-bottom: 120px;
+}
+
 .ul_about {
   list-style: none;
   font-family: 'Inter', sans-serif;
@@ -310,13 +333,19 @@ article {
   padding-top: 128px;
   border-top: 1px solid white;
   padding-inline-start: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
-
 .ul_content {
   list-style: none;
   font-size: 22px;
   font-weight: 400;
   line-height: 43px;
+}
+
+.ul_about>li {
+  flex: 1 1 350px;
 }
 
 .li_about {
@@ -459,5 +488,29 @@ textarea::placeholder {
 
   #work_cards .text {
     font-size: 17px;
+  }
+
+  .cover {
+    margin-inline-end: 24px;
+  }
+
+  #work_cards article {
+    margin: 0 24px 37px 0;
+  }
+
+  #about_header {
+    padding-bottom: 130px;
+  }
+
+  .about {
+    padding-inline: 141px;
+  }
+
+  .ul_content {
+    padding-inline-start: 0;
+  }
+
+  .ul_about>li {
+    text-align: left;
   }
 }
