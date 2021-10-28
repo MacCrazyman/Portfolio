@@ -115,6 +115,7 @@ section {
   flex-flow: column;
   justify-content: flex-start;
   height: 100%;
+  width: 100%;
 }
 
 .title {
@@ -209,7 +210,7 @@ ul {
 
 .separator {
   border-top: 1px solid #212121;
-  flex-basis: 300px;
+  flex-basis: 380px;
   flex-grow: 1;
   /* margin: 0 24px; */
 }
@@ -268,6 +269,9 @@ article {
 
 #work_cards article {
   margin: 0 0 24px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
 }
 
 #work_cards {
@@ -345,7 +349,7 @@ article {
 }
 
 .ul_about>li {
-  flex: 1 1 350px;
+  flex: 1 1 380px;
 }
 
 .li_about {
@@ -364,6 +368,14 @@ span {
 
 footer {
   background: white;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+}
+
+#form_section {
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 footer h2 {
@@ -376,6 +388,11 @@ footer h2 {
   text-align: center;
   color: #172b4d;
   margin-bottom: 58px;
+  max-width: 455px;
+}
+
+form {
+  flex: 1 1 300px;
 }
 
 .contact_ul {
@@ -436,7 +453,37 @@ textarea::placeholder {
   width: auto;
 }
 
-@media (min-width: 600px) {
+#footer_social {
+  order: 1 !important;
+  flex-flow: row !important;
+  justify-content: center;
+  border-top: 1px solid #dfe1e6;
+  width: 100%;
+  margin: 0;
+  padding: 15px 0;
+  height: auto;
+}
+
+footer .icon {
+  filter: brightness(0) saturate(100%)
+  invert(34%) 
+  sepia(38%) 
+  saturate(346%) 
+  hue-rotate(179deg) 
+  brightness(94%) 
+  contrast(89%);
+}
+
+#finish {
+height: 5px;
+width: 134px;
+background: #0D151E;
+border-radius: 10px;
+order: 3;
+margin-bottom: 5px;
+}
+
+@media (min-width: 790px) {
   .items {
     margin-top: 24px;
   }
@@ -512,5 +559,52 @@ textarea::placeholder {
 
   .ul_about>li {
     text-align: left;
+  }
+
+  #form_header {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+    padding-right: 24px;
+    margin-right: 24px;
+  }
+
+  #form_section {
+    padding: 130px 135px;
+  }
+
+  #finish {
+    display: none;
+  }
+
+  ul.contact_ul li {
+    justify-content: left;
+  }
+
+  #work_cards button {
+    display: none;
+  }
+
+  #work_cards>article {
+    height: 435px;
+    width: 369px;
+  }
+
+  .card02 {
+    padding-bottom: 16px;
+  }
+
+  #work_cards>article:hover {
+    background:  url(images/Card_background.png);
+    cursor: pointer;
+  }
+
+  #work_cards>article:hover .card02{
+    display: none;
+  }
+
+  #work_cards>article:hover button {
+    display:initial;
+    
   }
 }
