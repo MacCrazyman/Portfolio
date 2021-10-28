@@ -58,7 +58,7 @@ body {
   color: white;
 
   /* border: 5px solid goldenrod; */
-  flex: 1 1;
+  /* flex: 1 1; */
 }
 
 header {
@@ -172,8 +172,18 @@ section {
 
 .work {
   background-color: white;
-  display: grid;
+  display: flex;
+  flex-flow: grid;
   row-gap: 24px;
+  /* justify-content: center;
+  flex: 1 1; */
+}
+
+#work_title {
+  display: inline-flex;
+  flex-flow: wrap row;
+  align-items: center;
+  padding: 0 12px;
 }
 
 .cover {
@@ -191,11 +201,19 @@ ul {
   letter-spacing: 0;
   text-align: left;
   color: #1c1a19;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .separator {
   border-top: 1px solid #212121;
+  flex-basis: 300px;
+  flex-grow: 1;
+  margin: 0 24px;
+}
+
+#work_cover {
+  display: flex;
+  flex-flow: row wrap ;
 }
 
 .subtitle {
@@ -428,5 +446,18 @@ textarea::placeholder {
     flex-flow: column;
     justify-content: center;
     margin: 0 87px 0 12px;
+  }
+
+  .work{
+    padding: 141px;
+  }
+
+  #work_cover .title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  #work_cards .text {
+    font-size: 17px;
   }
 }
