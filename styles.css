@@ -550,7 +550,7 @@ footer .icon {
   }
 
   .cover:hover {
-    transform: scale(110%); 
+    transform: scale(1.1);
   }
 
   #work_cards article {
@@ -618,7 +618,6 @@ footer .icon {
   }
 
   #work_cards > article:hover .card02 {
-    /*display: none;*/
     opacity: 0;
   }
 
