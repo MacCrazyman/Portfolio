@@ -194,6 +194,7 @@ section {
   max-width: 100%;
   flex: 1 1;
   margin-bottom: 24px;
+  transition: transform 1s ease;
 }
 
 ul {
@@ -546,6 +547,10 @@ footer .icon {
 
   .cover {
     margin-inline-end: 24px;
+  }
+
+  .cover:hover {
+    transform: scale(110%); 
   }
 
   #work_cards article {
