@@ -14,48 +14,76 @@
   <header class="block">
     <a class="name">Leonardo Pareja</a>
     <nav class="nav_bar">
+      <ul id="nav">
+        <li><a href="#work_section" class="nav_link">Portfolio</a></li>
+        <li><a href="#about_header" class="nav_link">About</a></li>
+        <li><a href="#form_header" class="nav_link">Contact</a></li>
+        <li><a href="mailto:leonardopareja.fl@hotmail.com" class="nav_link"><img src="images/icons/Icon_Mail.svg" alt=""></a></li>
+      </ul>
       <img class="menu" src="images/icons/Menu_icon.svg" alt="menu icon">
     </nav>
   </header>
   <main class="block container">
     <section class="section01">
-      <h1 class="title title01 items">
-        Hey there. <br>I'm Leonardo
-      </h1>
-      <h2 class="title text01 items">I'm a Software Developer</h2>
-      <p class="text text02 items">I can help you build a product, 
-        feature or website look through some of my work and 
-        experience! if you like what you see and have a project 
-        you need coded, don't hesitate to contact me.</p>
-        <ul class="social_media items">
-          <li><a href=""><img src="images/icons/github_icon.svg" alt="github_icon" class="icon icon01"></a></li>
-          <li><a href=""><img src="images/icons/Linkedin_icon.svg" alt="Linkedin_icon" class="icon icon02"></a></li>
-          <li><a href=""><img src="images/icons/hand_icon.svg" alt="hand_icon" class="icon icon03"></a></li>
-          <li><a href=""><img src="images/icons/twitter_icon.svg" alt="twitter_icon" class="icon icon04"></a></li>
-          <li><a href=""><img src="images/icons/M_icon.svg" alt="M_icon" class="icon icon05"></a></li>
-        </ul>
-    </section>
-    <section class="work">
-      <h2 class="title presentation" >My Recent Works</h2>
-      <div class="separator"></div>
-      <img src="images/Img_Placeholder.png" alt="Cover_image" class="cover">
-      <article class="card01">
-        <h3 class="title subtitle font_black">Multi-Post Stories</h3>
-        <p class="text text03 items">A daily selection of privately personalized reads; 
-          no accounts or sign-ups required. has been the industry's 
-          standard dummy text ever since the 1500s, when an unknown 
-          printer took a standard dummy text.
+      <div id="introduction">
+        <h1 class="title title01 items">
+          Hey there. <br>I'm Leonardo
+        </h1>
+        <h2 class="title text01 items">I'm a Software Developer</h2>
+        <p class="text text02 items">I can help you build a product, 
+          feature or website look through some of my work and 
+          experience! if you like what you see and have a project 
+          you need coded, don't hesitate to contact me.
         </p>
-        <ul class="languages lang01 items">
-          <li> <div class="lang_item font_black">CSS </div> </li>
-          <li> <div class="lang_item font_black">html </div> </li>
-          <li> <div class="lang_item font_black">bootstrap </div> </li>
-          <li> <div class="lang_item font_black">Ruby </div> </li>
-        </ul>
-        <button class="btn btn01 items">See Project</button>
-      </article>
-      <article >
-        <div class="card card02">
+      </div>
+      <ul class="social_media items">
+        <li><a href=""><img src="images/icons/github_icon.svg" alt="github_icon" class="icon icon01"></a></li>
+        <li><a href=""><img src="images/icons/Linkedin_icon.svg" alt="Linkedin_icon" class="icon icon02"></a></li>
+        <li><a href=""><img src="images/icons/hand_icon.svg" alt="hand_icon" class="icon icon03"></a></li>
+        <li><a href=""><img src="images/icons/twitter_icon.svg" alt="twitter_icon" class="icon icon04"></a></li>
+        <li><a href=""><img src="images/icons/M_icon.svg" alt="M_icon" class="icon icon05"></a></li>
+      </ul>
+    </section>
+    <section id="work_section" class="work">
+      <div id="work_title">
+        <h2 class="title presentation" >My Recent Works</h2>
+        <hr class="separator">
+      </div>
+      <div id="work_cover">
+        <img src="images/Img_Placeholder.png" alt="Cover_image" class="cover">
+        <article class="card01">
+          <h3 class="title subtitle font_black">Multi-Post Stories</h3>
+          <p class="text text03 items">A daily selection of privately personalized reads; 
+            no accounts or sign-ups required. has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown 
+            printer took a standard dummy text.
+          </p>
+          <ul class="languages lang01 items">
+            <li> <div class="lang_item font_black">CSS </div> </li>
+            <li> <div class="lang_item font_black">html </div> </li>
+            <li> <div class="lang_item font_black">bootstrap </div> </li>
+            <li> <div class="lang_item font_black">Ruby </div> </li>
+          </ul>
+          <button class="btn btn01 items">See Project</button>
+        </article>
+      </div>
+      <div id="work_cards">
+        <article >
+          <div class="card card02">
+            <h3 class="title subtitle">Multi-Post Stories</h3>
+            <p class="text text04 items">A daily selection of privately personalized 
+              reads; no accounts or sign-ups required. has been the industry's standard
+            </p>
+            <ul class="languages lang02 items">
+              <li> <div class="lang_item lang_item06">html </div> </li>
+              <li> <div class="lang_item lang_item07">bootstrap </div> </li>
+              <li> <div class="lang_item lang_item08">Ruby </div> </li>
+            </ul>
+          </div>
+          <button class="btn btn02 items">See Project</button>
+        </article>
+        <article>
+          <div class="card card02">
           <h3 class="title subtitle">Multi-Post Stories</h3>
           <p class="text text04 items">A daily selection of privately personalized 
             reads; no accounts or sign-ups required. has been the industry's standard
@@ -65,33 +93,78 @@
             <li> <div class="lang_item lang_item07">bootstrap </div> </li>
             <li> <div class="lang_item lang_item08">Ruby </div> </li>
           </ul>
-        </div>
+          </div>
         <button class="btn btn02 items">See Project</button>
-      </article>
-      <article>
-        <div class="card card02">
-        <h3 class="title subtitle">Multi-Post Stories</h3>
-        <p class="text text04 items">A daily selection of privately personalized 
-          reads; no accounts or sign-ups required. has been the industry's standard
-        </p>
-        <ul class="languages lang02 items">
-          <li> <div class="lang_item lang_item06">html </div> </li>
-          <li> <div class="lang_item lang_item07">bootstrap </div> </li>
-          <li> <div class="lang_item lang_item08">Ruby </div> </li>
-        </ul>
+        </article>
+        <article>
+          <div class="card card02">
+          <h3 class="title subtitle">Multi-Post Stories</h3>
+          <p class="text text04 items">A daily selection of privately personalized 
+            reads; no accounts or sign-ups required. has been the industry's standard
+          </p>
+          <ul class="languages lang02 items">
+            <li> <div class="lang_item lang_item06">html </div> </li>
+            <li> <div class="lang_item lang_item07">bootstrap </div> </li>
+            <li> <div class="lang_item lang_item08">Ruby </div> </li>
+          </ul>
+          </div>
+        <button class="btn btn02 items">See Project</button>
+        </article>
+        <article>
+          <div class="card card02">
+          <h3 class="title subtitle">Multi-Post Stories</h3>
+          <p class="text text04 items">A daily selection of privately personalized 
+            reads; no accounts or sign-ups required. has been the industry's standard
+          </p>
+          <ul class="languages lang02 items">
+            <li> <div class="lang_item lang_item06">html </div> </li>
+            <li> <div class="lang_item lang_item07">bootstrap </div> </li>
+            <li> <div class="lang_item lang_item08">Ruby </div> </li>
+          </ul>
+          </div>
+        <button class="btn btn02 items">See Project</button>
+        </article>
+        <article>
+          <div class="card card02">
+          <h3 class="title subtitle">Multi-Post Stories</h3>
+          <p class="text text04 items">A daily selection of privately personalized 
+            reads; no accounts or sign-ups required. has been the industry's standard
+          </p>
+          <ul class="languages lang02 items">
+            <li> <div class="lang_item lang_item06">html </div> </li>
+            <li> <div class="lang_item lang_item07">bootstrap </div> </li>
+            <li> <div class="lang_item lang_item08">Ruby </div> </li>
+          </ul>
+          </div>
+        <button class="btn btn02 items">See Project</button>
+        </article>
+        <article>
+          <div class="card card02">
+          <h3 class="title subtitle">Multi-Post Stories</h3>
+          <p class="text text04 items">A daily selection of privately personalized 
+            reads; no accounts or sign-ups required. has been the industry's standard
+          </p>
+          <ul class="languages lang02 items">
+            <li> <div class="lang_item lang_item06">html </div> </li>
+            <li> <div class="lang_item lang_item07">bootstrap </div> </li>
+            <li> <div class="lang_item lang_item08">Ruby </div> </li>
+          </ul>
+          </div>
+        <button class="btn btn02 items">See Project</button>
+        </article>
       </div>
-      <button class="btn btn02 items">See Project</button>
-    </article>
     </section>
     <section class="about">
-      <h4 class="title title01 items">
-        About me
-      </h4>
-      <p class="text text02 items">Hello I’m a software developer! I can help you build a product , 
-        feature or website Look through some of my work and experience! If you like what 
-        you see and have a project you need coded, don’t hestiate to contact me.
-      </p>
-      <button class="btn btn03 items">Get My Resume</button>
+      <div id="about_header">
+        <h4 class="title title01 items">
+          About me
+        </h4>
+        <p class="text text02 items">Hello I’m a software developer! I can help you build a product , 
+          feature or website Look through some of my work and experience! If you like what 
+          you see and have a project you need coded, don’t hestiate to contact me.
+        </p>
+        <button class="btn btn03 items">Get My Resume</button>
+      </div>
       <ul class="ul_about">
         <li class="ul1"><span>Language</span>
           <ul class="ul_content">
@@ -123,8 +196,8 @@
     </section>
   </main>
   <footer class="block">
-    <section>
-      <h2>
+    <section id="form_section">
+      <h2 id="form_header">
         I'm always interested in hearing about new projects, 
         so if you'd like to chat please get in touch.
       </h2>
@@ -137,6 +210,14 @@
         </ul>
       </form>
     </section>
+    <ul id="footer_social" class="social_media items">
+      <li><a href=""><img src="images/icons/github_icon.svg" alt="github_icon" class="icon icon01"></a></li>
+        <li><a href=""><img src="images/icons/Linkedin_icon.svg" alt="Linkedin_icon" class="icon icon02"></a></li>
+        <li><a href=""><img src="images/icons/hand_icon.svg" alt="hand_icon" class="icon icon03"></a></li>
+        <li><a href=""><img src="images/icons/twitter_icon.svg" alt="twitter_icon" class="icon icon04"></a></li>
+        <li><a href=""><img src="images/icons/M_icon.svg" alt="M_icon" class="icon icon05"></a></li>
+    </ul>
+    <hr id="finish">
   </footer>
 </body>
 </html>
