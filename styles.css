@@ -654,7 +654,7 @@ footer .icon {
   .about {
     background-image: url(images/Frame.svg);
     background-repeat: no-repeat;
-    background-position: top 100px right;
+    background-position: top 100px right -100px;
   }
 }
 
@@ -662,5 +662,9 @@ footer .icon {
   .section01 {
     background-image: url(images/Illustration-header.svg);
     background-position: top right;
+  }
+
+  .about {
+    background-position: top 100px right;
   }
 }
