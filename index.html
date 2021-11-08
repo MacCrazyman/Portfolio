@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-734YZ6K0YN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-734YZ6K0YN');
   </script>
-  <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@700&family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@700&family=Poppins&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Leonardo Pareja Portfolio</title>
 </head>
+
 <body>
+  <div id="mobile_menu" class="hidden">
+    <img id="close_menu" class="close_menu" src="images/icons/Icon_Cancel.svg" alt="close button">
+    <ul>
+      <li><a href="#work_section" class="nav_link close_menu">Portfolio</a></li>
+      <li><a href="#about_header" class="nav_link close_menu">About</a></li>
+      <li><a href="#form_header" class="nav_link close_menu">Contact</a></li>
+    </ul>
+  </div>
   <header class="block">
-    <a class="name">Leonardo Pareja</a>
+    <a  href='#' class="name">Leonardo Pareja</a>
     <nav class="nav_bar">
       <ul id="nav">
         <li><a href="#work_section" class="nav_link">Portfolio</a></li>
         <li><a href="#about_header" class="nav_link">About</a></li>
         <li><a href="#form_header" class="nav_link">Contact</a></li>
-        <li><a href="mailto:leonardopareja.fl@hotmail.com" class="nav_link"><img src="images/icons/Icon_Mail.svg" alt="mail_icon"></a></li>
+        <li><a href="mailto:leonardopareja.fl@hotmail.com" class="nav_link"><img src="images/icons/Icon_Mail.svg"
+              alt="mail_icon"></a></li>
       </ul>
       <img class="menu" src="images/icons/Menu_icon.svg" alt="menu icon">
     </nav>
@@ -39,9 +52,9 @@
           Hey there. <br>I'm Leonardo
         </h1>
         <h2 class="title text01 items">I'm a Software Developer</h2>
-        <p class="text text02 items">I can help you build a product, 
-          feature or website look through some of my work and 
-          experience! if you like what you see and have a project 
+        <p class="text text02 items">I can help you build a product,
+          feature or website look through some of my work and
+          experience! if you like what you see and have a project
           you need coded, don't hesitate to contact me.
         </p>
       </div>
@@ -55,111 +68,155 @@
     </section>
     <section id="work_section" class="work">
       <div id="work_title">
-        <h2 class="title presentation" >My Recent Works</h2>
+        <h2 class="title presentation">My Recent Works</h2>
         <hr class="separator">
       </div>
       <div id="work_cover">
         <img src="images/Img_Placeholder.png" alt="Cover_image" class="cover">
         <article class="card01">
           <h3 class="title subtitle font_black">Multi-Post Stories</h3>
-          <p class="text text03 items">A daily selection of privately personalized reads; 
-            no accounts or sign-ups required. has been the industry's 
-            standard dummy text ever since the 1500s, when an unknown 
+          <p class="text text03 items">A daily selection of privately personalized reads;
+            no accounts or sign-ups required. has been the industry's
+            standard dummy text ever since the 1500s, when an unknown
             printer took a standard dummy text.
           </p>
           <ul class="languages lang01 items">
-            <li> <div class="lang_item font_black">CSS </div> </li>
-            <li> <div class="lang_item font_black">html </div> </li>
-            <li> <div class="lang_item font_black">bootstrap </div> </li>
-            <li> <div class="lang_item font_black">Ruby </div> </li>
+            <li>
+              <div class="lang_item font_black">CSS </div>
+            </li>
+            <li>
+              <div class="lang_item font_black">html </div>
+            </li>
+            <li>
+              <div class="lang_item font_black">bootstrap </div>
+            </li>
+            <li>
+              <div class="lang_item font_black">Ruby </div>
+            </li>
           </ul>
           <button class="btn btn01 items">See Project</button>
         </article>
       </div>
       <div id="work_cards">
-        <article >
+        <article>
           <div class="card card02">
             <h3 class="title subtitle">Multi-Post Stories</h3>
-            <p class="text text04 items">A daily selection of privately personalized 
+            <p class="text text04 items">A daily selection of privately personalized
               reads; no accounts or sign-ups required. has been the industry's standard
             </p>
             <ul class="languages lang02 items">
-              <li> <div class="lang_item lang_item06">html </div> </li>
-              <li> <div class="lang_item lang_item07">bootstrap </div> </li>
-              <li> <div class="lang_item lang_item08">Ruby </div> </li>
+              <li>
+                <div class="lang_item lang_item06">html </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item07">bootstrap </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item08">Ruby </div>
+              </li>
             </ul>
           </div>
           <button class="btn btn02 items">See Project</button>
         </article>
         <article>
           <div class="card card02">
-          <h3 class="title subtitle">Multi-Post Stories</h3>
-          <p class="text text04 items">A daily selection of privately personalized 
-            reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="languages lang02 items">
-            <li> <div class="lang_item lang_item06">html </div> </li>
-            <li> <div class="lang_item lang_item07">bootstrap </div> </li>
-            <li> <div class="lang_item lang_item08">Ruby </div> </li>
-          </ul>
+            <h3 class="title subtitle">Multi-Post Stories</h3>
+            <p class="text text04 items">A daily selection of privately personalized
+              reads; no accounts or sign-ups required. has been the industry's standard
+            </p>
+            <ul class="languages lang02 items">
+              <li>
+                <div class="lang_item lang_item06">html </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item07">bootstrap </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item08">Ruby </div>
+              </li>
+            </ul>
           </div>
-        <button class="btn btn02 items">See Project</button>
+          <button class="btn btn02 items">See Project</button>
         </article>
         <article>
           <div class="card card02">
-          <h3 class="title subtitle">Multi-Post Stories</h3>
-          <p class="text text04 items">A daily selection of privately personalized 
-            reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="languages lang02 items">
-            <li> <div class="lang_item lang_item06">html </div> </li>
-            <li> <div class="lang_item lang_item07">bootstrap </div> </li>
-            <li> <div class="lang_item lang_item08">Ruby </div> </li>
-          </ul>
+            <h3 class="title subtitle">Multi-Post Stories</h3>
+            <p class="text text04 items">A daily selection of privately personalized
+              reads; no accounts or sign-ups required. has been the industry's standard
+            </p>
+            <ul class="languages lang02 items">
+              <li>
+                <div class="lang_item lang_item06">html </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item07">bootstrap </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item08">Ruby </div>
+              </li>
+            </ul>
           </div>
-        <button class="btn btn02 items">See Project</button>
+          <button class="btn btn02 items">See Project</button>
         </article>
         <article>
           <div class="card card02">
-          <h3 class="title subtitle">Multi-Post Stories</h3>
-          <p class="text text04 items">A daily selection of privately personalized 
-            reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="languages lang02 items">
-            <li> <div class="lang_item lang_item06">html </div> </li>
-            <li> <div class="lang_item lang_item07">bootstrap </div> </li>
-            <li> <div class="lang_item lang_item08">Ruby </div> </li>
-          </ul>
+            <h3 class="title subtitle">Multi-Post Stories</h3>
+            <p class="text text04 items">A daily selection of privately personalized
+              reads; no accounts or sign-ups required. has been the industry's standard
+            </p>
+            <ul class="languages lang02 items">
+              <li>
+                <div class="lang_item lang_item06">html </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item07">bootstrap </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item08">Ruby </div>
+              </li>
+            </ul>
           </div>
-        <button class="btn btn02 items">See Project</button>
+          <button class="btn btn02 items">See Project</button>
         </article>
         <article>
           <div class="card card02">
-          <h3 class="title subtitle">Multi-Post Stories</h3>
-          <p class="text text04 items">A daily selection of privately personalized 
-            reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="languages lang02 items">
-            <li> <div class="lang_item lang_item06">html </div> </li>
-            <li> <div class="lang_item lang_item07">bootstrap </div> </li>
-            <li> <div class="lang_item lang_item08">Ruby </div> </li>
-          </ul>
+            <h3 class="title subtitle">Multi-Post Stories</h3>
+            <p class="text text04 items">A daily selection of privately personalized
+              reads; no accounts or sign-ups required. has been the industry's standard
+            </p>
+            <ul class="languages lang02 items">
+              <li>
+                <div class="lang_item lang_item06">html </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item07">bootstrap </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item08">Ruby </div>
+              </li>
+            </ul>
           </div>
-        <button class="btn btn02 items">See Project</button>
+          <button class="btn btn02 items">See Project</button>
         </article>
         <article>
           <div class="card card02">
-          <h3 class="title subtitle">Multi-Post Stories</h3>
-          <p class="text text04 items">A daily selection of privately personalized 
-            reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="languages lang02 items">
-            <li> <div class="lang_item lang_item06">html </div> </li>
-            <li> <div class="lang_item lang_item07">bootstrap </div> </li>
-            <li> <div class="lang_item lang_item08">Ruby </div> </li>
-          </ul>
+            <h3 class="title subtitle">Multi-Post Stories</h3>
+            <p class="text text04 items">A daily selection of privately personalized
+              reads; no accounts or sign-ups required. has been the industry's standard
+            </p>
+            <ul class="languages lang02 items">
+              <li>
+                <div class="lang_item lang_item06">html </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item07">bootstrap </div>
+              </li>
+              <li>
+                <div class="lang_item lang_item08">Ruby </div>
+              </li>
+            </ul>
           </div>
-        <button class="btn btn02 items">See Project</button>
+          <button class="btn btn02 items">See Project</button>
         </article>
       </div>
     </section>
@@ -168,8 +225,8 @@
         <h4 class="title title01 items">
           About me
         </h4>
-        <p class="text text02 items">Hello I’m a software developer! I can help you build a product , 
-          feature or website Look through some of my work and experience! If you like what 
+        <p class="text text02 items">Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you like what
           you see and have a project you need coded, don’t hestiate to contact me.
         </p>
         <button class="btn btn03 items">Get My Resume</button>
@@ -207,26 +264,32 @@
   <footer class="block">
     <section id="form_section">
       <h2 id="form_header">
-        I'm always interested in hearing about new projects, 
+        I'm always interested in hearing about new projects,
         so if you'd like to chat please get in touch.
       </h2>
       <form action="https://formspree.io/f/mjvjdzvl" method="post">
         <ul class="contact_ul">
           <li><input type="text" id="name" name="contact_name" placeholder="Full name" maxlength="30" required></li>
           <li><input type="email" id="email" name="email" placeholder="Email address" required></li>
-          <li><textarea name="comment" id="textarea_comment" placeholder="Enter text here" maxlength="500" required></textarea></li>
+          <li><textarea name="comment" id="textarea_comment" placeholder="Enter text here" maxlength="500"
+              required></textarea></li>
           <li><button type="submit" id="form_button">Get in touch</button></li>
         </ul>
       </form>
     </section>
     <ul id="footer_social" class="social_media items">
       <li><a href=""><img src="images/icons/github_icon.svg" alt="github_icon" class="icon icon01"></a></li>
-        <li><a href=""><img src="images/icons/Linkedin_icon.svg" alt="Linkedin_icon" class="icon icon02"></a></li>
-        <li><a href=""><img src="images/icons/hand_icon.svg" alt="hand_icon" class="icon icon03"></a></li>
-        <li><a href=""><img src="images/icons/twitter_icon.svg" alt="twitter_icon" class="icon icon04"></a></li>
-        <li><a href=""><img src="images/icons/M_icon.svg" alt="M_icon" class="icon icon05"></a></li>
+      <li><a href=""><img src="images/icons/Linkedin_icon.svg" alt="Linkedin_icon" class="icon icon02"></a></li>
+      <li><a href=""><img src="images/icons/hand_icon.svg" alt="hand_icon" class="icon icon03"></a></li>
+      <li><a href=""><img src="images/icons/twitter_icon.svg" alt="twitter_icon" class="icon icon04"></a></li>
+      <li><a href=""><img src="images/icons/M_icon.svg" alt="M_icon" class="icon icon05"></a></li>
     </ul>
-    <hr id="finish">
+    <div id="home_indicator">
+      <hr id="finish">
+    </div>
   </footer>
+  
+  <script src="script.js"></script>
 </body>
+
 </html>
