@@ -117,6 +117,8 @@ header {
 }
 
 .name {
+  text-decoration: none;
+  color: white;
   height: 24px;
   left: 12px;
   padding-inline-start: 24px;
