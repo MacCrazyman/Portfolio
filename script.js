@@ -1,13 +1,13 @@
 const hamburger = document.querySelector('.menu');
-let mobileMenu = document.querySelector('#mobile-menu');
-const cross = document.querySelector('#close-menu');
+const mobileMenu = document.querySelector('#mobile_menu');
+const cross = document.querySelector('#close_menu');
 
 function displayMenu() {
-  mobileMenu.classList.replace('hidden', 'mobile-menu');
+  mobileMenu.classList.replace('hidden', 'mobile_menu');
 }
 
 function hideMenu() {
-  mobileMenu.classList.replace('mobile-menu', 'hidden');
+  mobileMenu.classList.replace('mobile_menu', 'hidden');
 }
 
 hamburger.addEventListener('click', displayMenu);
