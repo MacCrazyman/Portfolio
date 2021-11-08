@@ -680,3 +680,10 @@ footer .icon {
     background-position: top 100px right;
   }
 }
+
+.mobile-menu {
+  position: fixed;
+  background-color: #dfe1e6;
+  width: 100vw;
+  height: 100vh;
+}
