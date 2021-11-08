@@ -681,6 +681,10 @@ footer .icon {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .mobile-menu {
   position: fixed;
   background-color: #dfe1e6;
