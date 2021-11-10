@@ -13,7 +13,7 @@ font-family: 'Roboto', sans-serif; */
   margin-bottom: 0;
 }
 
-button {
+.button {
   height: 48px;
   width: 100%;
   border: none;
@@ -27,16 +27,17 @@ button {
   padding: 12px;
   cursor: pointer;
   transition: all 0.6s ease-out;
+  text-align: center;
 }
 
-button:hover {
+.button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
   color: #f55800;
 }
 
-button:active {
+.button:active {
   background: #e05304;
   color: #f4f1f0;
 }
@@ -652,7 +653,7 @@ footer .icon {
     justify-content: left;
   }
 
-  #work_cards button {
+  #work_cards .button {
     display: none;
   }
 
@@ -680,7 +681,7 @@ footer .icon {
     opacity: 0;
   }
 
-  #work_cards > article:hover button {
+  #work_cards > article:hover .button {
     display: initial;
   }
 

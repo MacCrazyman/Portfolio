@@ -26,7 +26,7 @@ function createCard(project) {
   cardTitle.classList = 'title subtitle';
   description.classList = 'text items';
   techlist.classList = 'languages items';
-  button.classList = 'btn items';
+  button.classList = 'button btn items';
   articleContainer.appendChild(card);
   card.appendChild(cardTitle);
   card.appendChild(description);
