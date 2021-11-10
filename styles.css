@@ -573,6 +573,14 @@ footer .icon {
   margin-top: 25px;
 }
 
+.invalid {
+  border-color: red !important;
+}
+
+#error_message {
+  color: red;
+}
+
 @media (min-width: 1000px) {
   .items {
     margin-top: 24px;
