@@ -94,3 +94,16 @@ hamburger.addEventListener('click', displayMenu);
 cross.forEach((item) => item.addEventListener('click', hideMenu));
 createCard(projects[0]);
 modalcross.addEventListener('click', hidePopup);
+
+const form = document.querySelector('#contact_form');
+form.addEventListener('submit', (event) => {
+  const email = document.querySelector('#email');
+  const regex = /([a-z])+/g;
+  event.preventDefault();
+  if (regex.text(email)) {
+    form.submit();
+    alert('IT worked!!');
+  } else {
+    alert('IT didnt work!!');
+  }
+});
