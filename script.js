@@ -14,6 +14,7 @@ const mobileMenu = document.querySelector('#mobile_menu');
 const cross = document.querySelectorAll('.close_menu');
 const modalWindow = document.querySelector('.modal-container');
 const modalcross = document.querySelector('.modal-closer');
+const webPage = document.querySelector('body');
 
 function createCard(project) {
   const articleContainer = document.createElement('article');
@@ -67,6 +68,7 @@ function showPopup(project) {
     techitem.textContent = value;
     techlist.appendChild(techitem);
   });
+  webPage.classList.add('static');
 }
 
 function hidePopup() {
@@ -75,14 +77,17 @@ function hidePopup() {
   while (techlist.firstChild) {
     techlist.removeChild(techlist.firstChild);
   }
+  webPage.classList.remove('static');
 }
 
 function displayMenu() {
   mobileMenu.classList.replace('hidden', 'mobile_menu');
+  webPage.classList.add('static');
 }
 
 function hideMenu() {
   mobileMenu.classList.replace('mobile_menu', 'hidden');
+  webPage.classList.remove('static');
 }
 
 hamburger.addEventListener('click', displayMenu);
