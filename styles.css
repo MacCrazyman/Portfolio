@@ -26,7 +26,7 @@ font-family: 'Roboto', sans-serif; */
   background: #ff6b00;
   padding: 12px;
   cursor: pointer;
-  transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out !important;
   text-align: center;
 }
 
@@ -115,6 +115,7 @@ header {
   background-color: #3c3a39;
   align-items: center;
   height: 48px;
+  z-index: 2;
 }
 
 .name {
@@ -283,8 +284,8 @@ section {
 
 article {
   background:
-    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
-    url(images/Card_background.png);
+    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+    /* url(images/Card_background.png); */
   background-repeat: no-repeat;
   max-width: 369px;
 }
@@ -349,6 +350,7 @@ article {
   text-align: center;
   padding: 10px 12px;
   margin-inline-end: 12px;
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .font_black {
@@ -654,26 +656,28 @@ footer .icon {
   }
 
   #work_cards .button {
-    display: none;
+    margin-top: 0;
+    transform: translateY(100%);
+    opacity: 0;
+    height: 0;
   }
 
   #work_cards > article {
     height: 435px;
     width: 369px;
-    transition: all 0.5s ease-in-out;
   }
 
   .card02 {
     padding-bottom: 16px;
-    transition: all 0.5s ease-in-out;
   }
 
   #work_cards * {
-    transition: all 0.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
   }
 
   #work_cards > article:hover {
-    background: url(images/Card_background.png);
+    background-position:0 100vh;
+    /* background: url(images/Card_background.png); */
     cursor: pointer;
   }
 
@@ -682,7 +686,9 @@ footer .icon {
   }
 
   #work_cards > article:hover .button {
-    display: initial;
+    transform: translateY(0);
+    opacity: 1;
+    height: initial;
   }
 
   .menu {

@@ -22,7 +22,7 @@ function createCard(project) {
   const description = document.createElement('p');
   const techlist = document.createElement('ul');
   const button = document.createElement('a');
-  card.classList = 'card';
+  card.classList = 'card card02';
   cardTitle.classList = 'title subtitle';
   description.classList = 'text items';
   techlist.classList = 'languages items';
