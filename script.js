@@ -7,6 +7,46 @@ const projects = [
     link: '#',
     source: 'https://github.com/MacCrazyman',
   },
+  {
+    name: 'Data Dashboard Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    featured_image: 'images/Img_Dashboard.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    link: '#',
+    source: 'https://github.com/MacCrazyman',
+  },
+  {
+    name: 'Website Portfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    featured_image: 'images/Snapshoot_Portfolio.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    link: '#',
+    source: 'https://github.com/MacCrazyman',
+  },
+  {
+    name: 'Professional Art Printing Data More',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    featured_image: 'images/Img_Art.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    link: '#',
+    source: 'https://github.com/MacCrazyman',
+  },
+  {
+    name: 'Multi Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    featured_image: 'images/Card_background.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    link: '#',
+    source: 'https://github.com/MacCrazyman',
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    featured_image: 'images/Img_Dashboard.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    link: '#',
+    source: 'https://github.com/MacCrazyman',
+  },
 ];
 
 const hamburger = document.querySelector('.menu');
@@ -29,8 +69,8 @@ function createCard(project) {
   const button = document.createElement('a');
   card.classList = 'card card02';
   cardPicture.classList = 'cardPicture';
-  cardPicture.setAttribute('alt','Project picture')
-  cardPicture.setAttribute('src',project.featured_image)
+  cardPicture.setAttribute('alt', 'Project picture');
+  cardPicture.setAttribute('src', project.featured_image);
   cardTitle.classList = 'title subtitle';
   description.classList = 'text items';
   techlist.classList = 'languages items';
@@ -114,6 +154,6 @@ function validateForm(e) {
 
 hamburger.addEventListener('click', displayMenu);
 cross.forEach((item) => item.addEventListener('click', hideMenu));
-createCard(projects[0]);
+projects.forEach((project) => { createCard(project); });
 modalcross.addEventListener('click', hidePopup);
 form.addEventListener('submit', (event) => validateForm(event));
