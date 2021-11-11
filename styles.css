@@ -68,8 +68,7 @@ ul {
   backdrop-filter: blur(2px);
   align-content: center;
   justify-content: center;
-  margin: auto auto;
-  overflow-y: auto;
+  padding: 60px 16px;
 }
 
 .hidden {
@@ -78,9 +77,73 @@ ul {
 
 .modal-content {
   background-color: white;
-  padding: 24px;
+  padding: 16px;
   display: flex;
   flex-flow: row wrap;
+  overflow-y: auto;
+}
+
+.modal-header {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.modal-closer {
+  flex-grow: 0;
+  padding: 8px;
+  width: 40px;
+}
+
+.modal-element {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.modal-tech {
+  margin-bottom: 24px;
+}
+
+.modal-button {
+  text-align: center;
+  align-self: flex-end;
+  text-decoration: none;
+  width: fit-content;
+  margin-right: 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal-icon {
+  width: fit-content;
+  height: 24px;
+}
+
+.modal-img {
+  flex-grow: 1;
+  margin-bottom: 24px;
+}
+
+.modal-card {
+  display: flex;
+  flex-flow:row wrap;
+  flex-grow: 1;
+  max-width: 424px;
+  min-width: 292px;
+}
+
+.modal-card .modal-button:last-child {
+  margin-right: 0;
+}
+
+.modal-description {
+  width: 100%;
+  justify-self: stretch;
+  flex-grow: 1;
 }
 
 .mobile_menu {
@@ -282,6 +345,14 @@ section {
   text-align: left;
   color: #1c1a19;
   margin-inline-end: 24px;
+}
+
+.modal-title {
+  flex-grow: 1;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 0;
+  padding-bottom: 40px;
 }
 
 .separator {
@@ -582,8 +653,38 @@ footer .icon {
 }
 
 @media (min-width: 1000px) {
+  .modal-container {
+    padding: 112px 142px;
+  }
+
+  .modal-content {
+    padding: 24px;
+  }
+
+  .modal-element {
+    flex-flow: row;
+  }
+
+  .modal-img {
+    flex-grow: 1;
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+
+  .modal-button {
+    margin-right: 7px;
+  }
+  .modal-title {
+    padding: 0;
+  }
+
   .items {
     margin-top: 24px;
+  }
+
+  .modal-tech li {
+    margin-top: 0;
+    margin-bottom: 16px;
   }
 
   .name {

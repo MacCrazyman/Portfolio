@@ -1,6 +1,6 @@
 const projects = [
   {
-    name: 'project1',
+    name: 'Multi Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     featured_image: 'images/Card_background.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -66,7 +66,7 @@ function showPopup(project) { // eslint-disable-line no-unused-vars
 
   project.technologies.forEach((value) => {
     const techitem = document.createElement('li');
-    techitem.className = 'skill';
+    techitem.className = 'skill lang_item font_black items';
     techitem.textContent = value;
     techlist.appendChild(techitem);
   });
