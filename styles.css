@@ -28,6 +28,7 @@ font-family: 'Roboto', sans-serif; */
   cursor: pointer;
   transition: all 0.6s ease-out !important;
   text-align: center;
+  z-index: 1;
 }
 
 .button:hover {
@@ -162,6 +163,7 @@ ul {
   letter-spacing: 0;
   text-align: left;
   padding: 4px 24px;
+  z-index: 3;
 }
 
 #close_menu {
@@ -203,7 +205,14 @@ header {
   background-color: #3c3a39;
   align-items: center;
   height: 48px;
-  z-index: 1;
+  z-index: 2;
+}
+
+.cardPicture {
+  position: absolute;
+  max-width: inherit;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .name {
@@ -379,19 +388,18 @@ section {
 }
 
 article {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
-
-  /* url(images/Card_background.png); */
-  background-repeat: no-repeat;
   max-width: 369px;
 }
 
 .card {
   display: flex;
   max-width: 369px;
-  padding-inline: 16px;
+  padding: 16px;
   flex-flow: column nowrap;
   justify-content: center;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .card01 {
@@ -798,7 +806,6 @@ footer .icon {
 
   #work_cards > article {
     height: 435px;
-    width: 369px;
   }
 
   .card02 {

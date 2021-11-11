@@ -22,16 +22,21 @@ const warning = document.querySelector('small');
 function createCard(project) {
   const articleContainer = document.createElement('article');
   const card = document.createElement('div');
+  const cardPicture = document.createElement('img');
   const cardTitle = document.createElement('h3');
   const description = document.createElement('p');
   const techlist = document.createElement('ul');
   const button = document.createElement('a');
   card.classList = 'card card02';
+  cardPicture.classList = 'cardPicture';
+  cardPicture.setAttribute('alt','Project picture')
+  cardPicture.setAttribute('src',project.featured_image)
   cardTitle.classList = 'title subtitle';
   description.classList = 'text items';
   techlist.classList = 'languages items';
-  button.classList = 'button btn items';
+  button.classList = 'button btn';
   articleContainer.appendChild(card);
+  articleContainer.appendChild(cardPicture);
   card.appendChild(cardTitle);
   card.appendChild(description);
   card.appendChild(techlist);
