@@ -15,6 +15,9 @@ const cross = document.querySelectorAll('.close_menu');
 const modalWindow = document.querySelector('.modal-container');
 const modalcross = document.querySelector('.modal-closer');
 const webPage = document.querySelector('body');
+const form = document.querySelector('#contact_form');
+const email = document.querySelector('#email');
+const warning = document.querySelector('small');
 
 function createCard(project) {
   const articleContainer = document.createElement('article');
@@ -47,7 +50,7 @@ function createCard(project) {
   projectHolder.appendChild(articleContainer);
 }
 
-function showPopup(project) {
+function showPopup(project) { // eslint-disable-line no-unused-vars
   modalWindow.classList.replace('hidden', 'show_popup');
   const title = document.querySelector('.modal-title');
   const image = document.querySelector('.modal-img');
@@ -55,7 +58,6 @@ function showPopup(project) {
   const techlist = document.querySelector('.modal-tech');
   const livelink = document.querySelector('#modal-live');
   const sourcelink = document.querySelector('#modal-source');
-
   title.textContent = project.name;
   image.srcset = project.featured_image;
   description.textContent = project.description;
@@ -90,7 +92,23 @@ function hideMenu() {
   webPage.classList.remove('static');
 }
 
+function validateForm(e) {
+  e.preventDefault();
+  const emailValue = email.value.trim();
+
+  const regex = /[A-Z]/g;
+  if (!regex.test(emailValue)) {
+    form.submit();
+    email.classList.remove('invalid');
+    warning.textContent = '';
+  } else {
+    email.classList.add('invalid');
+    warning.textContent = 'Email should be in lowercase!!!';
+  }
+}
+
 hamburger.addEventListener('click', displayMenu);
 cross.forEach((item) => item.addEventListener('click', hideMenu));
 createCard(projects[0]);
 modalcross.addEventListener('click', hidePopup);
+form.addEventListener('submit', (event) => validateForm(event));
