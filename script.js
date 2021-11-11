@@ -83,7 +83,7 @@ function createCard(project) {
   articleContainer.appendChild(button);
   cardTitle.textContent = project.name;
   description.textContent = project.description;
-  button.setAttribute('onclick', `showPopup(projects[${projects.indexOf(project)}])`);
+  articleContainer.setAttribute('onclick', `showPopup(projects[${projects.indexOf(project)}])`);
   project.technologies.forEach((value) => {
     const techitem = document.createElement('li');
     techitem.className = 'lang_item';
@@ -157,3 +157,4 @@ cross.forEach((item) => item.addEventListener('click', hideMenu));
 projects.forEach((project) => { createCard(project); });
 modalcross.addEventListener('click', hidePopup);
 form.addEventListener('submit', (event) => validateForm(event));
+cross.forEach((item) => item.addEventListener('click', hideMenu));
