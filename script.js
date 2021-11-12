@@ -49,6 +49,10 @@ const projects = [
   },
 ];
 
+const formData = {
+
+};
+
 const hamburger = document.querySelector('.menu');
 const mobileMenu = document.querySelector('#mobile_menu');
 const cross = document.querySelectorAll('.close_menu');
@@ -58,6 +62,7 @@ const webPage = document.querySelector('body');
 const form = document.querySelector('#contact_form');
 const email = document.querySelector('#email');
 const warning = document.querySelector('small');
+const inputs = document.querySelectorAll('.input');
 
 function createCard(project) {
   const articleContainer = document.createElement('article');
@@ -152,9 +157,22 @@ function validateForm(e) {
   }
 }
 
+function saveData(event) {
+  formData[event.target.name] = event.target.value;
+  localStorage.saveData = JSON.stringify(formData);
+}
+
+function GetData() {
+  if (localStorage.getItem('saveData')) {
+    const localData = JSON.parse(localStorage.saveData);
+    inputs.forEach((input) => { input.value = localData[input.name]; });
+  }
+}
+
 hamburger.addEventListener('click', displayMenu);
 cross.forEach((item) => item.addEventListener('click', hideMenu));
 projects.forEach((project) => { createCard(project); });
 modalcross.addEventListener('click', hidePopup);
 form.addEventListener('submit', (event) => validateForm(event));
-cross.forEach((item) => item.addEventListener('click', hideMenu));
+inputs.forEach((input) => input.addEventListener('change', saveData));
+GetData();
