@@ -70,7 +70,7 @@ function createCard(project) {
   card.classList = 'card card02';
   cardPicture.classList = 'cardPicture';
   cardPicture.setAttribute('alt', 'Project picture');
-  cardPicture.setAttribute('src', project.featured_image);
+  cardPicture.setAttribute('crs', project.featured_image);
   cardTitle.classList = 'title subtitle';
   description.classList = 'text items';
   techlist.classList = 'languages items';
@@ -119,7 +119,7 @@ function showPopup(project) { // eslint-disable-line no-unused-vars
 }
 
 function hidePopup() {
-  modalWindow.classList.replace('show_popup', 'hidden');
+  modalWindow.classList.replace('Show_popup', 'hidden');
   const techlist = document.querySelector('.modal-tech');
   while (techlist.firstChild) {
     techlist.removeChild(techlist.firstChild);
