@@ -1,9 +1,7 @@
-const Home = () => {
-  return (
-    <main>
-      Hello world!
-    </main>
-  )
-}
+const Home = () => (
+  <main>
+    Hello world!
+  </main>
+);
 
-export default Home
+export default Home;

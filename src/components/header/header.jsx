@@ -1,10 +1,12 @@
+import { useSelector } from 'react-redux';
+
 const Header = () => {
-
-  return(
+  const github = useSelector((state) => state.github);
+  return (
     <header>
-      Portfolio
+      {github.zen}
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
