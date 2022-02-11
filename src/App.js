@@ -4,13 +4,15 @@ import { useDispatch } from 'react-redux';
 import './App.css';
 import Header from './components/header/header';
 import Home from './components/home/home';
-import { fetchZen } from './redux/features/github/githubSlice';
+import { fetchRepos, fetchUser, fetchZen } from './redux/features/github/githubSlice';
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchZen());
+    dispatch(fetchUser());
+    dispatch(fetchRepos());
   });
   return (
     <div className="App">

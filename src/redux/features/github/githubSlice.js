@@ -1,20 +1,22 @@
 /* eslint-disable no-param-reassign -- state protected from mutating by using immer */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { getRepos, getUser, getZen } from './githubFetch';
 
 export const fetchZen = createAsyncThunk(
   'github/fetchZen',
-  async () => {
-    const requestOptions = {
-      method: 'GET',
-      redirect: 'follow',
-    };
-    const response = await fetch('https://api.github.com/zen', requestOptions)
-      .then((response) => response.text())
-      .catch((error) => console.log('error', error));
-
-    return response;
-  },
+  () => getZen(),
 );
+
+export const fetchUser = createAsyncThunk(
+  'github/fetchUser',
+  () => getUser(),
+);
+
+export const fetchRepos = createAsyncThunk(
+  'github/fetchRepos',
+  () => getRepos(),
+);
+
 export const githubSlice = createSlice({
   name: 'github',
   initialState: {
@@ -31,6 +33,14 @@ export const githubSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(fetchZen.fulfilled, (state, action) => {
       state.zen = action.payload;
+    });
+
+    builder.addCase(fetchUser.fulfilled, (state, action) => {
+      state.profile = action.payload;
+    });
+
+    builder.addCase(fetchRepos.fulfilled, (state, action) => {
+      state.repositories = action.payload;
     });
   },
 
